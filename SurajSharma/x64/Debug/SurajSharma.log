@@ -1,0 +1,7 @@
+﻿  main.cpp
+main.obj : error LNK2019: unresolved external symbol __imp_glewInit referenced in function main
+main.obj : error LNK2019: unresolved external symbol glfwInit referenced in function main
+main.obj : error LNK2019: unresolved external symbol __imp_glewExperimental referenced in function main
+C:\Users\dan\Desktop\Code\SurajSharma\Linking\lib\glfw3.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\dan\Desktop\Code\SurajSharma\Linking\lib\glew32.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\dan\Desktop\Code\SurajSharma\x64\Debug\SurajSharma.exe : fatal error LNK1120: 3 unresolved externals
