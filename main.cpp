@@ -14,6 +14,24 @@ bool loadShaders(GLuint& program) {
 	std::ifstream in_file;
 
 	in_file.open("vertex_core.glsl");
+
+	if (in_file.is_open()) {
+		while (std::getline(in_file, temp))
+			src += temp + "\n";
+	}
+	else {
+		std::cout << "Error: Couldn't open vertex shader file" << "\n";
+	}
+
+	in_file.close();
+
+	temp = "";
+	src = "";
+
+	//fragment
+
+
+	//vertex
 }
 
 int main() {
