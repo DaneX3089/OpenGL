@@ -1,7 +1,7 @@
 CMakeFiles/OpenGLProject.dir/src/main.cpp.obj: \
- C:\Users\Maiko\Documents\OpenGL\src\main.cpp \
- C:/Users/Maiko/Documents/OpenGL/glad/include/glad/gl.h \
- C:/Users/Maiko/Documents/OpenGL/glad/include/KHR/khrplatform.h \
+ C:\Users\Maiko\Documents\Githubs\OpenGL\src\main.cpp \
+ C:/Users/Maiko/Documents/Githubs/OpenGL/glad/include/glad/gl.h \
+ C:/Users/Maiko/Documents/Githubs/OpenGL/glad/include/KHR/khrplatform.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
  C:/msys64/ucrt64/include/stdint.h C:/msys64/ucrt64/include/crtdefs.h \
  C:/msys64/ucrt64/include/corecrt.h C:/msys64/ucrt64/include/_mingw.h \
@@ -11,7 +11,7 @@ CMakeFiles/OpenGLProject.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/sdks/_mingw_ddk.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
  C:/msys64/ucrt64/include/stddef.h \
- C:/Users/Maiko/Documents/OpenGL/libs/glfw/include/GLFW/glfw3.h \
+ C:/Users/Maiko/Documents/Githubs/OpenGL/libs/glfw/include/GLFW/glfw3.h \
  C:/msys64/ucrt64/include/c++/14.2.0/iostream \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/requires_hosted.h \
  C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \

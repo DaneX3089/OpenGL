@@ -1,14 +1,14 @@
 [
 {
-  "directory": "C:/Users/Maiko/Documents/OpenGL/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/OpenGLProject.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\OpenGLProject.dir\\src\\main.cpp.obj -c C:\\Users\\Maiko\\Documents\\OpenGL\\src\\main.cpp",
-  "file": "C:/Users/Maiko/Documents/OpenGL/src/main.cpp",
+  "directory": "C:/Users/Maiko/Documents/Githubs/OpenGL/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/OpenGLProject.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\OpenGLProject.dir\\src\\main.cpp.obj -c C:\\Users\\Maiko\\Documents\\Githubs\\OpenGL\\src\\main.cpp",
+  "file": "C:/Users/Maiko/Documents/Githubs/OpenGL/src/main.cpp",
   "output": "CMakeFiles/OpenGLProject.dir/src/main.cpp.obj"
 },
 {
-  "directory": "C:/Users/Maiko/Documents/OpenGL/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/OpenGLProject.dir/includes_C.rsp -g -o CMakeFiles\\OpenGLProject.dir\\src\\gl.c.obj -c C:\\Users\\Maiko\\Documents\\OpenGL\\src\\gl.c",
-  "file": "C:/Users/Maiko/Documents/OpenGL/src/gl.c",
+  "directory": "C:/Users/Maiko/Documents/Githubs/OpenGL/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/OpenGLProject.dir/includes_C.rsp -g -o CMakeFiles\\OpenGLProject.dir\\src\\gl.c.obj -c C:\\Users\\Maiko\\Documents\\Githubs\\OpenGL\\src\\gl.c",
+  "file": "C:/Users/Maiko/Documents/Githubs/OpenGL/src/gl.c",
   "output": "CMakeFiles/OpenGLProject.dir/src/gl.c.obj"
 }
 ]

@@ -66,11 +66,11 @@
 			[
 				{
 					"backtrace" : 4,
-					"path" : "C:/Users/Maiko/Documents/OpenGL/glad/include"
+					"path" : "C:/Users/Maiko/Documents/Githubs/OpenGL/glad/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "C:/Users/Maiko/Documents/OpenGL/libs/glfw/include"
+					"path" : "C:/Users/Maiko/Documents/Githubs/OpenGL/libs/glfw/include"
 				}
 			],
 			"language" : "CXX",
@@ -98,11 +98,11 @@
 			[
 				{
 					"backtrace" : 4,
-					"path" : "C:/Users/Maiko/Documents/OpenGL/glad/include"
+					"path" : "C:/Users/Maiko/Documents/Githubs/OpenGL/glad/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "C:/Users/Maiko/Documents/OpenGL/libs/glfw/include"
+					"path" : "C:/Users/Maiko/Documents/Githubs/OpenGL/libs/glfw/include"
 				}
 			],
 			"language" : "C",
@@ -123,7 +123,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-LC:\\Users\\Maiko\\Documents\\OpenGL\\libs\\glfw\\lib-mingw-w64",
+				"fragment" : "-LC:\\Users\\Maiko\\Documents\\Githubs\\OpenGL\\libs\\glfw\\lib-mingw-w64",
 				"role" : "libraryPath"
 			},
 			{
