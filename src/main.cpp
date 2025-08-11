@@ -34,32 +34,13 @@ int main(){
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
     glfwSwapInterval(1); // Enable V-sync
 
-    // Vertex data for first rectangle (touching the left border)
-    GLfloat rect1vert[] = {
-        -0.5f,  0.5f, 0.0f,  // top right
-         0.0f, -0.5f, 0.0f,  // bottom right
-        -1.0f, -0.5f, 0.0f,  // bottom left
-        -1.0f,  0.5f, 0.0f   // top left
+    // Triangle vertices
+    GLfloat vertices[] = {
+        -0.5f, -0.5f, 0.0f,
+        0.5f, -0.5f, 0.0f,
+        0.0f, 0.5f, 0.0f
     };
 
-    // Vertex data for second rectangle (touching the right border)
-    GLfloat rect2vert[] = {
-         1.0f,  0.5f, 0.0f,  // top right
-         1.0f, -0.5f, 0.0f,  // bottom right
-         0.0f, -0.5f, 0.0f,  // bottom left
-         0.5f,  0.5f, 0.0f   // top left
-    };
-
-    // Indices to form two triangles per rectangle (0-1-3 and 1-2-3)
-    GLuint indices1[] = {
-        0, 1, 3,
-        1, 2, 3
-    };
-
-    GLuint indices2[] = {
-        2, 3, 0,
-        0, 1, 2
-    };
     // Load OpenGL functions using GLAD
     gladLoadGL(glfwGetProcAddress);
     glClearColor(0.2f, 0.5f, 0.1f, 1.0f); // Set background color
@@ -94,54 +75,31 @@ int main(){
     glDeleteShader(fragmentShader);
 
     // Vertex Array Objects, Vertex Buffer Objects, and Element Buffer Objects
-    GLuint VAOs[2], VBOs[2], EBOs[2];
-    glGenVertexArrays(2, VAOs);
-    glGenBuffers(2, VBOs);
-    glGenBuffers(2, EBOs);
+    GLuint VAO, VBO;
+    glGenVertexArrays(1, &VAO);
+    glGenBuffers(1, &VBO);
 
-    // --- Rectangle 1 setup ---
-    glBindVertexArray(VAOs[0]);
-    glBindBuffer(GL_ARRAY_BUFFER, VBOs[0]);
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBOs[0]);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(rect1vert), rect1vert, GL_STATIC_DRAW);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices1), indices1, GL_STATIC_DRAW);
+    glBindVertexArray(VAO);
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
 
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, 0); // Position attribute
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, 0);
     glEnableVertexAttribArray(0);
-
-    // --- Rectangle 2 setup ---
-    glBindVertexArray(VAOs[1]);
-    glBindBuffer(GL_ARRAY_BUFFER, VBOs[1]);
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBOs[1]);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(rect2vert), rect2vert, GL_STATIC_DRAW);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices2), indices2, GL_STATIC_DRAW);
-
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, 0); // Position attribute
-    glEnableVertexAttribArray(0);
-
-
-    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+    
     // --- Main render loop ---
     while (!glfwWindowShouldClose(window)) {
         glClear(GL_COLOR_BUFFER_BIT); // Clear the screen
 
         process_input(window); // Handle keyboard input
 
-        // Draw first rectangle (left)
-        glBindVertexArray(VAOs[0]);
-        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-
-        // Draw second rectangle (right)
-        glBindVertexArray(VAOs[1]);
-        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+        glDrawArrays(GL_TRIANGLES, 0, 3);
 
         glfwSwapBuffers(window); // Swap the front and back buffers
         glfwPollEvents();        // Poll for and process events
     }
 
     // Clean up resources
-    glDeleteVertexArrays(2, VAOs);
-    glDeleteBuffers(2, VBOs);
     glDeleteProgram(shaderProgram);
 
     glfwDestroyWindow(window);
@@ -159,5 +117,12 @@ void process_input(GLFWwindow* window) {
     // Pressing ESC will close the window
     if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
         glfwSetWindowShouldClose(window, GL_TRUE);
+    }
+
+    if (glfwGetKey(window, GLFW_KEY_F) == GLFW_PRESS) {
+        glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+    }
+    else {
+        glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
     }
 }
