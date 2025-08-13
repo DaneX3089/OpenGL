@@ -22,6 +22,7 @@ link_directories(
 # Source files
 # ================================
 add_executable(OpenGLProject
+    src/shader.h
     src/main.cpp
     src/gl.c        # GLAD C file
 )
