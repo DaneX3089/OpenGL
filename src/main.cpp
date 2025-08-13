@@ -33,7 +33,7 @@ int main()
 
     // build and compile our shader program
     // ------------------------------------
-    Shader sigmaShader("../shaders/vertexShader.glsl", "../shaders/fragmentShader.glsl"); // you can name your shader files however you like
+    Shader Shader("../shaders/vertexShader.glsl", "../shaders/fragmentShader.glsl");
 
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------
@@ -74,7 +74,7 @@ int main()
         glClear(GL_COLOR_BUFFER_BIT);
 
         // render the triangle
-        sigmaShader.use();
+        Shader.use();
         glBindVertexArray(VAO);
         glDrawArrays(GL_TRIANGLES, 0, 3);
 
