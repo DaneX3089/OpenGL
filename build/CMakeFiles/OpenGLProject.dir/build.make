@@ -71,11 +71,26 @@ include CMakeFiles/OpenGLProject.dir/flags.make
 CMakeFiles/OpenGLProject.dir/codegen:
 .PHONY : CMakeFiles/OpenGLProject.dir/codegen
 
+CMakeFiles/OpenGLProject.dir/src/stb_image.cpp.obj: CMakeFiles/OpenGLProject.dir/flags.make
+CMakeFiles/OpenGLProject.dir/src/stb_image.cpp.obj: CMakeFiles/OpenGLProject.dir/includes_CXX.rsp
+CMakeFiles/OpenGLProject.dir/src/stb_image.cpp.obj: C:/Users/Maiko/Documents/Githubs/OpenGL/src/stb_image.cpp
+CMakeFiles/OpenGLProject.dir/src/stb_image.cpp.obj: CMakeFiles/OpenGLProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Maiko\Documents\Githubs\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OpenGLProject.dir/src/stb_image.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLProject.dir/src/stb_image.cpp.obj -MF CMakeFiles\OpenGLProject.dir\src\stb_image.cpp.obj.d -o CMakeFiles\OpenGLProject.dir\src\stb_image.cpp.obj -c C:\Users\Maiko\Documents\Githubs\OpenGL\src\stb_image.cpp
+
+CMakeFiles/OpenGLProject.dir/src/stb_image.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLProject.dir/src/stb_image.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Maiko\Documents\Githubs\OpenGL\src\stb_image.cpp > CMakeFiles\OpenGLProject.dir\src\stb_image.cpp.i
+
+CMakeFiles/OpenGLProject.dir/src/stb_image.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLProject.dir/src/stb_image.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Maiko\Documents\Githubs\OpenGL\src\stb_image.cpp -o CMakeFiles\OpenGLProject.dir\src\stb_image.cpp.s
+
 CMakeFiles/OpenGLProject.dir/src/main.cpp.obj: CMakeFiles/OpenGLProject.dir/flags.make
 CMakeFiles/OpenGLProject.dir/src/main.cpp.obj: CMakeFiles/OpenGLProject.dir/includes_CXX.rsp
 CMakeFiles/OpenGLProject.dir/src/main.cpp.obj: C:/Users/Maiko/Documents/Githubs/OpenGL/src/main.cpp
 CMakeFiles/OpenGLProject.dir/src/main.cpp.obj: CMakeFiles/OpenGLProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Maiko\Documents\Githubs\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OpenGLProject.dir/src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Maiko\Documents\Githubs\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OpenGLProject.dir/src/main.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLProject.dir/src/main.cpp.obj -MF CMakeFiles\OpenGLProject.dir\src\main.cpp.obj.d -o CMakeFiles\OpenGLProject.dir\src\main.cpp.obj -c C:\Users\Maiko\Documents\Githubs\OpenGL\src\main.cpp
 
 CMakeFiles/OpenGLProject.dir/src/main.cpp.i: cmake_force
@@ -90,7 +105,7 @@ CMakeFiles/OpenGLProject.dir/src/gl.c.obj: CMakeFiles/OpenGLProject.dir/flags.ma
 CMakeFiles/OpenGLProject.dir/src/gl.c.obj: CMakeFiles/OpenGLProject.dir/includes_C.rsp
 CMakeFiles/OpenGLProject.dir/src/gl.c.obj: C:/Users/Maiko/Documents/Githubs/OpenGL/src/gl.c
 CMakeFiles/OpenGLProject.dir/src/gl.c.obj: CMakeFiles/OpenGLProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Maiko\Documents\Githubs\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/OpenGLProject.dir/src/gl.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Maiko\Documents\Githubs\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/OpenGLProject.dir/src/gl.c.obj"
 	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/OpenGLProject.dir/src/gl.c.obj -MF CMakeFiles\OpenGLProject.dir\src\gl.c.obj.d -o CMakeFiles\OpenGLProject.dir\src\gl.c.obj -c C:\Users\Maiko\Documents\Githubs\OpenGL\src\gl.c
 
 CMakeFiles/OpenGLProject.dir/src/gl.c.i: cmake_force
@@ -103,19 +118,21 @@ CMakeFiles/OpenGLProject.dir/src/gl.c.s: cmake_force
 
 # Object files for target OpenGLProject
 OpenGLProject_OBJECTS = \
+"CMakeFiles/OpenGLProject.dir/src/stb_image.cpp.obj" \
 "CMakeFiles/OpenGLProject.dir/src/main.cpp.obj" \
 "CMakeFiles/OpenGLProject.dir/src/gl.c.obj"
 
 # External object files for target OpenGLProject
 OpenGLProject_EXTERNAL_OBJECTS =
 
+OpenGLProject.exe: CMakeFiles/OpenGLProject.dir/src/stb_image.cpp.obj
 OpenGLProject.exe: CMakeFiles/OpenGLProject.dir/src/main.cpp.obj
 OpenGLProject.exe: CMakeFiles/OpenGLProject.dir/src/gl.c.obj
 OpenGLProject.exe: CMakeFiles/OpenGLProject.dir/build.make
 OpenGLProject.exe: CMakeFiles/OpenGLProject.dir/linkLibs.rsp
 OpenGLProject.exe: CMakeFiles/OpenGLProject.dir/objects1.rsp
 OpenGLProject.exe: CMakeFiles/OpenGLProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Maiko\Documents\Githubs\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable OpenGLProject.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Maiko\Documents\Githubs\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable OpenGLProject.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\OpenGLProject.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Maiko/Documents/Githubs/OpenGL/src/gl.c" "CMakeFiles/OpenGLProject.dir/src/gl.c.obj" "gcc" "CMakeFiles/OpenGLProject.dir/src/gl.c.obj.d"
   "C:/Users/Maiko/Documents/Githubs/OpenGL/src/main.cpp" "CMakeFiles/OpenGLProject.dir/src/main.cpp.obj" "gcc" "CMakeFiles/OpenGLProject.dir/src/main.cpp.obj.d"
+  "C:/Users/Maiko/Documents/Githubs/OpenGL/src/stb_image.cpp" "CMakeFiles/OpenGLProject.dir/src/stb_image.cpp.obj" "gcc" "CMakeFiles/OpenGLProject.dir/src/stb_image.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -22,6 +22,8 @@ link_directories(
 # Source files
 # ================================
 add_executable(OpenGLProject
+    src/stb_image.h
+    src/stb_image.cpp
     src/shader.h
     src/main.cpp
     src/gl.c        # GLAD C file
