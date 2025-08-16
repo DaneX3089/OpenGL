@@ -7,8 +7,9 @@ set(CMAKE_CXX_STANDARD 17)
 # Include directories
 # ================================
 include_directories(
-    glad/include
-    libs/glfw/include
+        glad/include
+        libs/glfw/include
+        libs/glm
 )
 
 # ================================
