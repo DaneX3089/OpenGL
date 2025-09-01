@@ -1,18 +1,18 @@
 [
 {
-  "directory": "/home/dan/Code/OpenGL/build",
-  "command": "/usr/bin/gcc  -I/home/dan/Code/OpenGL/glad/include -g -fPIC -o CMakeFiles/glad.dir/src/gl.c.o -c /home/dan/Code/OpenGL/src/gl.c",
+  "directory": "/home/dan/Code/OpenGL/out/Debug",
+  "command": "/usr/bin/cc  -I/home/dan/Code/OpenGL/glad/include -g -fPIC -o CMakeFiles/glad.dir/src/gl.c.o -c /home/dan/Code/OpenGL/src/gl.c",
   "file": "/home/dan/Code/OpenGL/src/gl.c",
   "output": "CMakeFiles/glad.dir/src/gl.c.o"
 },
 {
-  "directory": "/home/dan/Code/OpenGL/build",
+  "directory": "/home/dan/Code/OpenGL/out/Debug",
   "command": "/usr/bin/clang++  -I/home/dan/Code/OpenGL/include -I/home/dan/Code/OpenGL/glad/include -g -std=gnu++14 -o CMakeFiles/openGL_Project.dir/src/main.cpp.o -c /home/dan/Code/OpenGL/src/main.cpp",
   "file": "/home/dan/Code/OpenGL/src/main.cpp",
   "output": "CMakeFiles/openGL_Project.dir/src/main.cpp.o"
 },
 {
-  "directory": "/home/dan/Code/OpenGL/build",
+  "directory": "/home/dan/Code/OpenGL/out/Debug",
   "command": "/usr/bin/clang++  -I/home/dan/Code/OpenGL/include -I/home/dan/Code/OpenGL/glad/include -g -std=gnu++14 -o CMakeFiles/openGL_Project.dir/src/stb_image.cpp.o -c /home/dan/Code/OpenGL/src/stb_image.cpp",
   "file": "/home/dan/Code/OpenGL/src/stb_image.cpp",
   "output": "CMakeFiles/openGL_Project.dir/src/stb_image.cpp.o"

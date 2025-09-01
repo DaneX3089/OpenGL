@@ -57,7 +57,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/dan/Code/OpenGL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dan/Code/OpenGL/build
+CMAKE_BINARY_DIR = /home/dan/Code/OpenGL/out/Debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -88,14 +88,14 @@ clean: CMakeFiles/openGL_Project.dir/clean
 CMakeFiles/glad.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dan/Code/OpenGL/build/CMakeFiles --progress-num=1,2 "Built target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dan/Code/OpenGL/out/Debug/CMakeFiles --progress-num=1,2 "Built target glad"
 .PHONY : CMakeFiles/glad.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/glad.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dan/Code/OpenGL/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dan/Code/OpenGL/out/Debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/glad.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dan/Code/OpenGL/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dan/Code/OpenGL/out/Debug/CMakeFiles 0
 .PHONY : CMakeFiles/glad.dir/rule
 
 # Convenience name for target.
@@ -105,7 +105,7 @@ glad: CMakeFiles/glad.dir/rule
 # codegen rule for target.
 CMakeFiles/glad.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dan/Code/OpenGL/build/CMakeFiles --progress-num=1,2 "Finished codegen for target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dan/Code/OpenGL/out/Debug/CMakeFiles --progress-num=1,2 "Finished codegen for target glad"
 .PHONY : CMakeFiles/glad.dir/codegen
 
 # clean rule for target.
@@ -120,14 +120,14 @@ CMakeFiles/glad.dir/clean:
 CMakeFiles/openGL_Project.dir/all: CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/openGL_Project.dir/build.make CMakeFiles/openGL_Project.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/openGL_Project.dir/build.make CMakeFiles/openGL_Project.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dan/Code/OpenGL/build/CMakeFiles --progress-num=3,4,5 "Built target openGL_Project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dan/Code/OpenGL/out/Debug/CMakeFiles --progress-num=3,4,5 "Built target openGL_Project"
 .PHONY : CMakeFiles/openGL_Project.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/openGL_Project.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dan/Code/OpenGL/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dan/Code/OpenGL/out/Debug/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/openGL_Project.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dan/Code/OpenGL/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dan/Code/OpenGL/out/Debug/CMakeFiles 0
 .PHONY : CMakeFiles/openGL_Project.dir/rule
 
 # Convenience name for target.
@@ -137,7 +137,7 @@ openGL_Project: CMakeFiles/openGL_Project.dir/rule
 # codegen rule for target.
 CMakeFiles/openGL_Project.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/openGL_Project.dir/build.make CMakeFiles/openGL_Project.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dan/Code/OpenGL/build/CMakeFiles --progress-num=3,4,5 "Finished codegen for target openGL_Project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dan/Code/OpenGL/out/Debug/CMakeFiles --progress-num=3,4,5 "Finished codegen for target openGL_Project"
 .PHONY : CMakeFiles/openGL_Project.dir/codegen
 
 # clean rule for target.
