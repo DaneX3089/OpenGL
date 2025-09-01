@@ -1,20 +1,20 @@
 [
 {
-  "directory": "C:/Users/Maiko/Documents/Githubs/OpenGL/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/OpenGLProject.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\OpenGLProject.dir\\src\\stb_image.cpp.obj -c C:\\Users\\Maiko\\Documents\\Githubs\\OpenGL\\src\\stb_image.cpp",
-  "file": "C:/Users/Maiko/Documents/Githubs/OpenGL/src/stb_image.cpp",
-  "output": "CMakeFiles/OpenGLProject.dir/src/stb_image.cpp.obj"
+  "directory": "/home/dan/Code/OpenGL/build",
+  "command": "/usr/bin/clang++  -I/home/dan/Code/OpenGL/glad/include -I/home/dan/Code/OpenGL/include -g -std=gnu++14 -fPIE -o CMakeFiles/openGL_Project.dir/src/main.cpp.o -c /home/dan/Code/OpenGL/src/main.cpp",
+  "file": "/home/dan/Code/OpenGL/src/main.cpp",
+  "output": "CMakeFiles/openGL_Project.dir/src/main.cpp.o"
 },
 {
-  "directory": "C:/Users/Maiko/Documents/Githubs/OpenGL/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/OpenGLProject.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\OpenGLProject.dir\\src\\main.cpp.obj -c C:\\Users\\Maiko\\Documents\\Githubs\\OpenGL\\src\\main.cpp",
-  "file": "C:/Users/Maiko/Documents/Githubs/OpenGL/src/main.cpp",
-  "output": "CMakeFiles/OpenGLProject.dir/src/main.cpp.obj"
+  "directory": "/home/dan/Code/OpenGL/build",
+  "command": "/usr/bin/gcc  -I/home/dan/Code/OpenGL/glad/include -I/home/dan/Code/OpenGL/include -g -fPIE -o CMakeFiles/openGL_Project.dir/src/gl.c.o -c /home/dan/Code/OpenGL/src/gl.c",
+  "file": "/home/dan/Code/OpenGL/src/gl.c",
+  "output": "CMakeFiles/openGL_Project.dir/src/gl.c.o"
 },
 {
-  "directory": "C:/Users/Maiko/Documents/Githubs/OpenGL/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/OpenGLProject.dir/includes_C.rsp -g -o CMakeFiles\\OpenGLProject.dir\\src\\gl.c.obj -c C:\\Users\\Maiko\\Documents\\Githubs\\OpenGL\\src\\gl.c",
-  "file": "C:/Users/Maiko/Documents/Githubs/OpenGL/src/gl.c",
-  "output": "CMakeFiles/OpenGLProject.dir/src/gl.c.obj"
+  "directory": "/home/dan/Code/OpenGL/build",
+  "command": "/usr/bin/clang++  -I/home/dan/Code/OpenGL/glad/include -I/home/dan/Code/OpenGL/include -g -std=gnu++14 -fPIE -o CMakeFiles/openGL_Project.dir/src/stb_image.cpp.o -c /home/dan/Code/OpenGL/src/stb_image.cpp",
+  "file": "/home/dan/Code/OpenGL/src/stb_image.cpp",
+  "output": "CMakeFiles/openGL_Project.dir/src/stb_image.cpp.o"
 }
 ]

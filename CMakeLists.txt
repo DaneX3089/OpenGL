@@ -1,38 +1,23 @@
-cmake_minimum_required(VERSION 3.10)
-project(OpenGLProject)
+cmake_minimum_required(VERSION 3.13)
+project(openGL_Project)
+set(CMAKE_CXX_STANDARD 14)
 
-set(CMAKE_CXX_STANDARD 17)
+# Ensure position independent code
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
-# ================================
-# Include directories
-# ================================
-include_directories(
-    glad/include
-    libs/glfw/include
-)
-
-# ================================
-# Link directories (for precompiled glfw)
-# ================================
-link_directories(
-    libs/glfw/lib-mingw-w64
-)
-
-# ================================
-# Source files
-# ================================
-add_executable(OpenGLProject
-    src/stb_image.h
-    src/stb_image.cpp
-    src/shader.h
+set(SOURCE_FILES
     src/main.cpp
-    src/gl.c        # GLAD C file
+    src/gl.c   # GLAD loader
+    src/stb_image.cpp
+    src/stb_image.h
 )
 
-# ================================
-# Link libraries
-# ================================
-target_link_libraries(OpenGLProject
-    glfw3
-    opengl32
+add_executable(openGL_Project ${SOURCE_FILES})
+
+target_include_directories(openGL_Project
+    PRIVATE
+        ${CMAKE_SOURCE_DIR}/glad/include
+        ${CMAKE_SOURCE_DIR}/include
 )
+
+target_link_libraries(openGL_Project glfw)

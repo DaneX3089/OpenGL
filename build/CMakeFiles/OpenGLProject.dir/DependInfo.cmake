@@ -8,9 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Maiko/Documents/Githubs/OpenGL/src/gl.c" "CMakeFiles/OpenGLProject.dir/src/gl.c.obj" "gcc" "CMakeFiles/OpenGLProject.dir/src/gl.c.obj.d"
-  "C:/Users/Maiko/Documents/Githubs/OpenGL/src/main.cpp" "CMakeFiles/OpenGLProject.dir/src/main.cpp.obj" "gcc" "CMakeFiles/OpenGLProject.dir/src/main.cpp.obj.d"
-  "C:/Users/Maiko/Documents/Githubs/OpenGL/src/stb_image.cpp" "CMakeFiles/OpenGLProject.dir/src/stb_image.cpp.obj" "gcc" "CMakeFiles/OpenGLProject.dir/src/stb_image.cpp.obj.d"
+  "/home/dan/Code/OpenGL/src/gl.c" "CMakeFiles/OpenGLProject.dir/src/gl.c.o" "gcc" "CMakeFiles/OpenGLProject.dir/src/gl.c.o.d"
+  "/home/dan/Code/OpenGL/src/main.cpp" "CMakeFiles/OpenGLProject.dir/src/main.cpp.o" "gcc" "CMakeFiles/OpenGLProject.dir/src/main.cpp.o.d"
+  "/home/dan/Code/OpenGL/src/stb_image.cpp" "CMakeFiles/OpenGLProject.dir/src/stb_image.cpp.o" "gcc" "CMakeFiles/OpenGLProject.dir/src/stb_image.cpp.o.d"
+  "" "OpenGLProject" "gcc" "CMakeFiles/OpenGLProject.dir/link.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

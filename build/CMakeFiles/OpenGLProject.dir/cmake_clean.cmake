@@ -1,14 +1,13 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/OpenGLProject.dir/src/gl.c.obj"
-  "CMakeFiles/OpenGLProject.dir/src/gl.c.obj.d"
-  "CMakeFiles/OpenGLProject.dir/src/main.cpp.obj"
-  "CMakeFiles/OpenGLProject.dir/src/main.cpp.obj.d"
-  "CMakeFiles/OpenGLProject.dir/src/stb_image.cpp.obj"
-  "CMakeFiles/OpenGLProject.dir/src/stb_image.cpp.obj.d"
-  "OpenGLProject.exe"
-  "OpenGLProject.exe.manifest"
+  "CMakeFiles/OpenGLProject.dir/link.d"
+  "CMakeFiles/OpenGLProject.dir/src/gl.c.o"
+  "CMakeFiles/OpenGLProject.dir/src/gl.c.o.d"
+  "CMakeFiles/OpenGLProject.dir/src/main.cpp.o"
+  "CMakeFiles/OpenGLProject.dir/src/main.cpp.o.d"
+  "CMakeFiles/OpenGLProject.dir/src/stb_image.cpp.o"
+  "CMakeFiles/OpenGLProject.dir/src/stb_image.cpp.o.d"
+  "OpenGLProject"
   "OpenGLProject.pdb"
-  "libOpenGLProject.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
