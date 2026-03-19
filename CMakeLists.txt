@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.20)
 project(OpenGL)
 
+find_package(OpenGL REQUIRED)
+
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
@@ -17,10 +19,11 @@ add_executable(OpenGL src/main.cpp vendor/glad/src/gl.c
         core/EBO.cpp
         core/EBO.h
         core/Shader.h
+        src/main.cpp
 )
 
 target_include_directories(OpenGL PRIVATE
         vendor/glad/include
 )
 
-target_link_libraries(OpenGL glfw glm opengl32)
+target_link_libraries(OpenGL glfw glm OpenGL::GL)

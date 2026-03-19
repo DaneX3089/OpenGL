@@ -25,6 +25,7 @@ void Application::Init() {
     if (!glfwInit()) {
         std::cerr << "ERROR: Failed to initialize glfw";
     }
+    glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
     window = glfwCreateWindow(WIDTH, HEIGHT, TITLE, nullptr, nullptr);
     glfwMakeContextCurrent(window);
     glfwSwapInterval(1);
