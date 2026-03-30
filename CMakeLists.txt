@@ -17,6 +17,9 @@ add_executable(OpenGL src/main.cpp vendor/glad/src/gl.c
         core/EBO.cpp
         core/EBO.h
         core/Shader.h
+        core/texture.h
+        core/stb_image.h
+        core/stb_image.cpp
 )
 
 target_include_directories(OpenGL PRIVATE

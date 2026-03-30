@@ -7,7 +7,7 @@
 
 const int WIDTH = 800;
 const int HEIGHT = 800;
-const char *TITLE = "OpenGL";
+const char *TITLE = "wiggly wooglo";
 
 
 Application::Application() {
@@ -15,7 +15,11 @@ Application::Application() {
 }
 
 Application::~Application() {
+    delete Vao;
     delete Vbo;
+    delete Ebo;
+
+    delete texture;
     delete shader;
 
     glfwTerminate();
@@ -32,11 +36,11 @@ void Application::Init() {
     gladLoadGL(glfwGetProcAddress);
 
     GLfloat vertices[] = {
-         0.5f,  0.5f, 0.0f,       1.0f, 0.0f, 0.0f,
-         0.5f, -0.5f, 0.0f,       0.0f, 1.0f, 0.0f,
-        -0.5f, -0.5f, 0.0f,       0.0f, 0.0f, 1.0f,
-        -0.5f,  0.5f, 0.0f,       0.0f, 1.0f, 0.0f,
-         0.0f,  0.9f, 0.0f,       1.0f, 0.0f, 1.0f,
+         0.5f,  0.5f, 0.0f,       1.0f, 0.0f, 0.0f,     1.0f, 1.0f,
+         0.5f, -0.5f, 0.0f,       0.0f, 1.0f, 0.0f,     1.0f, 0.0f,
+        -0.5f, -0.5f, 0.0f,       0.0f, 0.0f, 1.0f,     0.0f, 0.0f,
+        -0.5f,  0.5f, 0.0f,       1.0f, 0.0f, 0.0f,     0.0f, 1.0f,
+         0.0f,  0.9f, 0.0f,       1.0f, 0.0f, 1.0f,     0.5f, 1.5f
     };
 
     GLuint indices[] = {
@@ -58,8 +62,12 @@ void Application::Init() {
     shader = new Shader("../shaders/vertex.glsl", "../shaders/fragment.glsl");
 
 
-    Vao->LinkAttrib(*Vbo, 0, 3, GL_FLOAT, 6 * sizeof(float), (void *) 0);
-    Vao->LinkAttrib(*Vbo, 1, 3, GL_FLOAT, 6 * sizeof(float), (void *) (3 * sizeof(float)));
+    texture = new Texture("../textures/dog.jpg");
+    texture->bind();
+
+    Vao->LinkAttrib(*Vbo, 0, 3, GL_FLOAT, 8 * sizeof(float), (void *) 0);
+    Vao->LinkAttrib(*Vbo, 1, 3, GL_FLOAT, 8 * sizeof(float), (void *) (3 * sizeof(float)));
+    Vao->LinkAttrib(*Vbo, 2, 2, GL_FLOAT, 8 * sizeof(float), (void *) (6*sizeof(float)));
 }
 
 void Application::Run() {
@@ -88,7 +96,7 @@ void Application::Render() {
     shader->use();
     shader->setFloat("time", (float) glfwGetTime());
 
-    trans = glm::scale(trans, glm::vec3(0.5f, 0.5f, 0.5f));
+    // trans = glm::scale(trans, sin(time * glm::vec3(0.5f, 0.5f, 0.5f)));
     trans = glm::rotate(trans, time, glm::vec3(0.0f, 0.0f, 1.0f));
 
     shader->setMatrix4fv("trans", trans);

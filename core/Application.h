@@ -12,6 +12,7 @@
 #include "VAO.h"
 #include "VBO.h"
 #include "EBO.h"
+#include "Texture.h"
 #include <GLFW/glfw3.h>
 
 
@@ -26,15 +27,17 @@ public:
 private:
     GLFWwindow *window{};
 
-    VAO *Vao;
-    VBO *Vbo;
-    EBO *Ebo;
+    VAO *Vao{};
+    VBO *Vbo{};
+    EBO *Ebo{};
 
-    int IndexCount;
+    int IndexCount{};
 
     glm::mat4 trans = glm::mat4(1.0f);
 
-    Shader *shader;
+    Texture* texture;
+
+    Shader *shader{};
 
     void Init();
 
