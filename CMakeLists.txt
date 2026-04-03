@@ -3,6 +3,7 @@ project(OpenGL)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+find_package(OpenGL REQUIRED)
 
 add_subdirectory(vendor/glfw)
 add_subdirectory(vendor/glm)
@@ -17,7 +18,7 @@ add_executable(OpenGL src/main.cpp vendor/glad/src/gl.c
         core/EBO.cpp
         core/EBO.h
         core/Shader.h
-        core/texture.h
+        core/Texture.h
         core/stb_image.h
         core/stb_image.cpp
 )
@@ -26,4 +27,4 @@ target_include_directories(OpenGL PRIVATE
         vendor/glad/include
 )
 
-target_link_libraries(OpenGL glfw glm opengl32)
+target_link_libraries(OpenGL glfw glm OpenGL::GL)
